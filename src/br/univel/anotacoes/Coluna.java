@@ -6,9 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface Tabela {
+@Target(ElementType.FIELD)
+public @interface Coluna {
 
-	String value() default "";
+	String nome() default "";
+	
+	boolean pk() default false;
 
 }
