@@ -55,6 +55,14 @@ public class Cliente {
 		this.estadocivil = estadocivil;
 	}
 
-	
+	public Cliente(int id, String nome, String endereco, String telefone, boolean estadocivil) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+		this.estadocivil = estadocivil;
+	}
+
 	
 }
