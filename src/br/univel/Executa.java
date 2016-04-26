@@ -105,14 +105,9 @@ public class Executa extends SqlGen {
             Statement execute = con.createStatement();
             execute.executeUpdate(create);
 
-            return create;
-
-        } catch (SecurityException e) {
-            throw new RuntimeException(e);
-        } catch (SQLException e) {
-            e.printStackTrace();
             return null;
-        }
+
+       
     }
 
 	@Override
