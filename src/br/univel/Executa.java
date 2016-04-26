@@ -5,8 +5,6 @@ import br.univel.anotacoes.Tabela;
 import br.univel.SqlGen;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -117,7 +115,40 @@ public class Executa extends SqlGen {
         }
     }
 
+	@Override
+	protected String getDropTable(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+	@Override
+	protected PreparedStatement getSqlInsert(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+	@Override
+	protected PreparedStatement getSqlSelectAll(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected PreparedStatement getSqlSelectById(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected PreparedStatement getSqlUpdateById(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected PreparedStatement getSqlDeleteById(Connection con, Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
