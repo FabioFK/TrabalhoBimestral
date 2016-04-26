@@ -117,43 +117,7 @@ public class Executa extends SqlGen {
         }
     }
 
-    @Override
-    public String getDropTable(Connection con, Object obj) {
-        try {
-            String nameTable;
-            StringBuilder sb = new StringBuilder();
 
-            Class<?> cl = obj.getClass();
-
-            if (cl.isAnnotationPresent(Tabela.class)) {
-                Tabela table = cl.getAnnotation(Tabela.class);
-                nameTable = table.value();
-            } else {
-                nameTable = cl.getSimpleName().toUpperCase();
-            }
-
-            sb.append("DROP TABLE ").append(nameTable).append(";");
-            String drop = sb.toString();
-
-            System.out.println(drop);
-            Statement execute = con.createStatement();
-            execute.executeUpdate(drop);
-            return drop;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-
-  
-
-
-	@Override
-	protected PreparedStatement getSqlSelectById(Connection con, Object obj) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 }
