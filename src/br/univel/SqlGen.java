@@ -13,4 +13,16 @@ public abstract class SqlGen {
 	protected abstract PreparedStatement getSqlSelectById(Connection con, Object obj);
 	protected abstract PreparedStatement getSqlUpdateById(Connection con, Object obj);
 	protected abstract PreparedStatement getSqlDeleteById(Connection con, Object obj);
+	protected PreparedStatement getSqlSelectById(Connection con, Object obj, int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	protected PreparedStatement getSqlUpdateById(Connection con, Object obj, int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	protected PreparedStatement getSqlDeleteById(Connection con, Object obj, int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	}

@@ -4,15 +4,15 @@ import br.univel.anotacoes.Coluna;
 
 public class Cliente {
 	
-	@Coluna(pk=true, nome="idclifor")
+	@Coluna(pk=true, nome="idclifor", SIZE = 0)
 	private int id;
-	@Coluna(nome = "nomecliente", tamanho = 150 )
+	@Coluna(nome = "nomecliente", tamanho = 150, SIZE = 0 )
 	private String nome;
-	@Coluna(nome = "endereco", tamanho = 200)
+	@Coluna(nome = "endereco", tamanho = 200, SIZE = 0)
 	private String endereco;
-	@Coluna(nome = "fone", tamanho = 10)
+	@Coluna(nome = "fone", tamanho = 10, SIZE = 0)
 	private String telefone;
-	@Coluna(nome = "estCivil")
+	@Coluna(nome = "estCivil", SIZE = 0)
 	private boolean estadocivil;
 
 	public int getId() {
